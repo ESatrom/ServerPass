@@ -1,0 +1,7 @@
+name: ServerPass
+version: '${project.version}'
+main: me.mindarius.serverpass.serverpass.Main
+api-version: 1.19
+authors: [ Mindarius ]
+description:
+  Place your server under one-time password protection. The first player to join after the plugin is installed will be prompted to supply a server password. After which each player will be required to supply the password on their first time logging in at which point they'll be added to a plugin-held "whitelist" (note: this is not the default whitelist, and will be reset on removing the plugin or clearing plugin config files). Players who supply an incorrect password will be presumed to be attempting to access the server without permission and will be banned (requiring an op to pardon them to attempt re-entering the password)
