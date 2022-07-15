@@ -25,7 +25,6 @@ import java.util.UUID;
 
 public final class Main extends JavaPlugin {
 
-    public static final AttributeModifier freeze = new AttributeModifier(new UUID(1, 1), "Freeze", -1, AttributeModifier.Operation.MULTIPLY_SCALAR_1);
     public static List<UUID> approvedPlayers = new ArrayList<>();
     public static String pass = null;
 

@@ -33,7 +33,8 @@ public class JoinListener implements Listener {
 
             //The following immobilizes the player and puts them in spectator, making them harmless
             p.setGameMode(GameMode.SPECTATOR);
-            p.getAttribute(Attribute.GENERIC_MOVEMENT_SPEED).addModifier(Main.freeze);
+            System.out.println(p.getFlySpeed());
+            p.setFlySpeed(0);
 
 
             new ConversationFactory(plugin).withFirstPrompt(new Prompts.TestPass()).buildConversation(p).begin(); //Ask for password
